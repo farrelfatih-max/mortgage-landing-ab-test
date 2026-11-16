@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "A": {
+      "headline": "Wujudkan Rumah Impian dengan Bunga KPR 3,5%",
+      "subtext": "Nikmati suku bunga promo tetap 3,5% eff. p.a. selama 3 tahun pertama bersama Bank Contoh. Pengajuan praktis 100% online dengan persetujuan cepat dan transparan.",
+      "buttonLabel": "Ajukan KPR Sekarang",
+      "buttonColor": "#FF7A00"
+    },
+    "B": {
+      "headline": "Cicilan Rumah Mulai Rp3 Jutaan per Bulan",
+      "subtext": "Miliki hunian idaman tanpa memberatkan pengeluaran bulanan Anda. Tenor panjang hingga 20 tahun dan fasilitas simulasi cicilan gratis dari Bank Contoh.",
+      "buttonLabel": "Hitung Cicilanmu",
+      "buttonColor": "#0055B8"
+    }
+  }
+}

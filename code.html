@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Bank Contoh - Promo KPR Rumah Impian (Simulasi Portofolio)</title>
+  <!-- Tailwind CSS CDN with plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ancol: {
+              blue: '#0055B8',
+              dark: '#003A80',
+              light: '#E6F0FA',
+              sky: '#0284C7',
+              accent: '#FF7A00',
+              yellow: '#FFB800',
+              cream: '#FFF9F2'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style data-purpose="base-styling">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #1e293b;
+      background-color: #f8fafc;
+    }
+    .text-shadow {
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+  <!-- Top Secondary Navigation -->
+  <div class="bg-slate-100 border-b border-slate-200 text-xs py-1.5 px-4 sm:px-8 text-slate-600 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <a class="hover:text-ancol-blue transition-colors font-medium" href="#keunggulan">KPR Individu</a>
+        <a class="hover:text-ancol-blue transition-colors font-medium" href="#simulasi">Simulasi KPR Gratis</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-clock text-ancol-blue"></i> Layanan Konsultasi Online: 08:00 - 20:00 WIB</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header Navbar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a class="flex items-center gap-2 group shrink-0" href="#">
+          <div class="w-9 h-9 rounded-xl bg-ancol-blue text-white flex items-center justify-center font-black text-lg shadow-sm">
+            <i class="fa-solid fa-house-chimney"></i>
+          </div>
+          <div class="flex items-center">
+            <span class="text-xl sm:text-2xl font-black text-ancol-blue tracking-tight whitespace-nowrap">Bank Contoh</span>
+            <span class="ml-2 pl-2 border-l-2 border-slate-200 text-xs sm:text-sm font-black text-ancol-accent tracking-wider uppercase whitespace-nowrap">KPR GRIYA</span>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center space-x-6 font-semibold text-slate-700 text-sm whitespace-nowrap">
+          <a class="hover:text-ancol-blue transition-colors" href="#keunggulan">Keunggulan</a>
+          <a class="hover:text-ancol-blue transition-colors" href="#simulasi">Simulasi</a>
+          <a class="hover:text-ancol-blue transition-colors" href="#program">Program</a>
+          <a class="hover:text-ancol-blue transition-colors" href="#tahapan">Pengajuan</a>
+          <a class="hover:text-ancol-blue transition-colors" href="#dokumen">Dokumen</a>
+        </nav>
+        <div class="flex items-center space-x-3 shrink-0">
+          <!-- Variant badge hidden by default, shown only when ?debug=1 is present -->
+          <span id="header-variant-badge" class="hidden items-center gap-1.5 text-xs font-bold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 whitespace-nowrap">
+            Varian A
+          </span>
+          <a class="inline-flex items-center gap-2 border-2 border-ancol-blue text-ancol-blue hover:bg-ancol-blue hover:text-white px-4 sm:px-5 py-2 rounded-full font-bold text-xs sm:text-sm transition duration-200 whitespace-nowrap" href="#simulasi">
+            <i class="fa-solid fa-calculator text-xs"></i>
+            <span>Kalkulator</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <!-- Hero Section -->
+    <section class="relative bg-slate-900 text-white overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-ancol-dark to-ancol-sky opacity-95"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-28 lg:pt-28 lg:pb-36 flex flex-col justify-end min-h-[520px]">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 bg-ancol-yellow text-slate-900 font-extrabold text-xs uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-4 shadow-lg">
+            <i class="fa-solid fa-house-circle-check text-ancol-accent"></i>
+            Promo KPR Spesial Bank Contoh
+          </div>
+          <h1 id="hero-headline" class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-4 text-shadow">
+            Wujudkan Rumah Impian dengan Bunga KPR 3,5%
+          </h1>
+          <p id="hero-subtext" class="text-base sm:text-xl text-slate-100 font-medium leading-relaxed mb-8 text-shadow">
+            Nikmati suku bunga promo tetap 3,5% eff. p.a. selama 3 tahun pertama bersama Bank Contoh. Pengajuan praktis 100% online.
+          </p>
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+            <button
+              id="hero-cta-btn"
+              type="button"
+              style="background-color: #FF7A00"
+              class="w-full sm:w-auto px-8 py-4 rounded-xl text-white font-extrabold text-base sm:text-lg tracking-wide shadow-xl hover:brightness-110 transition-all flex items-center justify-center gap-2.5 cursor-pointer"
+            >
+              <span id="hero-cta-label">Ajukan KPR Sekarang</span>
+              <i class="fa-solid fa-arrow-right text-sm"></i>
+            </button>
+            <span id="click-feedback" class="hidden text-xs sm:text-sm font-semibold text-emerald-300 bg-emerald-950/80 border border-emerald-500/40 px-3.5 py-2 rounded-lg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section (3 Cards) -->
+    <section class="bg-gradient-to-b from-slate-50 to-blue-50/50 py-14 sm:py-20 border-y border-slate-200" id="keunggulan">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+          <span class="text-ancol-accent font-extrabold text-xs uppercase tracking-wider bg-orange-100 px-3 py-1 rounded-full">Keunggulan KPR Bank Contoh</span>
+          <h2 class="text-2xl sm:text-4xl font-black text-slate-900 mt-2">Mengapa Memilih KPR di Bank Contoh?</h2>
+          <p class="text-slate-600 mt-1 text-sm sm:text-base">Kemudahan pembiayaan rumah impian dengan proses modern, tenor panjang, dan transparan.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-ancol-blue flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 bg-blue-100 text-ancol-blue rounded-2xl flex items-center justify-center text-xl mb-4 font-bold">
+                <i class="fa-solid fa-laptop-file"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-2">Proses 100% Online</h3>
+              <p class="text-slate-600 text-sm mb-6">Ajukan KPR dari mana saja tanpa harus datang ke kantor cabang. Unggah dokumen persyaratan dan pantau status pengajuan secara real-time.</p>
+            </div>
+            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100 text-xs font-bold text-ancol-blue">Verifikasi Cepat 1 - 3 Hari Kerja</div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 bg-amber-100 text-ancol-accent rounded-2xl flex items-center justify-center text-xl mb-4 font-bold">
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-2">Tenor hingga 20 Tahun</h3>
+              <p class="text-slate-600 text-sm mb-6">Atur arus kas keluarga lebih leluasa dengan pilihan jangka waktu kredit yang panjang dan fleksibel sesuai rencana keuangan Anda.</p>
+            </div>
+            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100 text-xs font-bold text-slate-800">Pilihan Tenor 5 s.d. 20 Tahun</div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-xl mb-4 font-bold">
+                <i class="fa-solid fa-calculator"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-2">Simulasi Cicilan Gratis</h3>
+              <p class="text-slate-600 text-sm mb-6">Hitung estimasi angsuran bulanan, uang muka, dan suku bunga secara transparan sejak awal tanpa biaya komitmen apa pun.</p>
+            </div>
+            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100 text-xs font-bold text-purple-700">100% Transparan &amp; Tanpa Biaya</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple Footer with Portfolio Disclaimer & High-Contrast Copyright -->
+  <footer class="bg-slate-950 text-slate-300 pt-12 pb-10 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mt-2 bg-slate-900/90 border border-slate-800 rounded-xl p-4 text-center">
+        <p class="text-xs sm:text-sm font-semibold text-amber-300">
+          Halaman ini adalah project simulasi untuk portofolio, bukan penawaran resmi.
+        </p>
+        <p class="text-xs sm:text-sm text-slate-300 font-medium mt-2">
+          © 2026 Bank Contoh (Entitas Fiktif untuk Simulasi A/B Testing Marketing Technology).
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Hidden Debug Stats Panel (?debug=1) -->
+  <aside id="debug-panel" class="hidden fixed bottom-0 inset-x-0 z-50 bg-slate-900/95 backdrop-blur-md text-white border-t-2 border-ancol-yellow shadow-2xl px-4 py-3 sm:px-6">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-3">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="bg-ancol-yellow text-slate-950 text-xs font-black px-2.5 py-1 rounded uppercase">Debug Mode (?debug=1)</span>
+        <span class="text-xs sm:text-sm text-slate-300">Active: <strong id="debug-active-variant" class="text-white">A</strong></span>
+      </div>
+      <div class="grid grid-cols-2 gap-3 w-full lg:w-auto text-xs">
+        <div class="bg-slate-800 rounded-lg px-3 py-2 border border-slate-700">
+          <div class="font-bold text-ancol-yellow">Variant A</div>
+          <div id="debug-stats-a" class="text-slate-300">Views: 0 | Clicks: 0 | CTR: 0.00%</div>
+        </div>
+        <div class="bg-slate-800 rounded-lg px-3 py-2 border border-slate-700">
+          <div class="font-bold text-sky-300">Variant B</div>
+          <div id="debug-stats-b" class="text-slate-300">Views: 0 | Clicks: 0 | CTR: 0.00%</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+        <button id="btn-download-csv" type="button" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs px-3.5 py-2 rounded-lg">Download CSV</button>
+        <button id="btn-reset-data" type="button" class="bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs px-3.5 py-2 rounded-lg">Reset data</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Vanilla JS A/B Test & Content Loader -->
+  <script>
+    (function () {
+      const VARIANT_KEY = 'bank_contoh_ab_variant';
+      const STATS_KEY = 'bank_contoh_ab_stats';
+
+      const FALLBACK = {
+        variants: {
+          A: {
+            headline: 'Wujudkan Rumah Impian dengan Bunga KPR 3,5%',
+            subtext: 'Nikmati suku bunga promo tetap 3,5% eff. p.a. selama 3 tahun pertama bersama Bank Contoh. Pengajuan praktis 100% online.',
+            buttonLabel: 'Ajukan KPR Sekarang',
+            buttonColor: '#FF7A00'
+          },
+          B: {
+            headline: 'Cicilan Rumah Mulai Rp3 Jutaan per Bulan',
+            subtext: 'Miliki hunian idaman tanpa memberatkan pengeluaran bulanan Anda. Tenor hingga 20 tahun dan simulasi cicilan gratis.',
+            buttonLabel: 'Hitung Cicilanmu',
+            buttonColor: '#0055B8'
+          }
+        }
+      };
+
+      function getOrAssignVariant() {
+        const params = new URLSearchParams(window.location.search);
+        const forced = (params.get('variant') || '').toUpperCase();
+        if (forced === 'A' || forced === 'B') {
+          localStorage.setItem(VARIANT_KEY, forced);
+          return forced;
+        }
+        const saved = localStorage.getItem(VARIANT_KEY);
+        if (saved === 'A' || saved === 'B') return saved;
+        const assigned = Math.random() < 0.5 ? 'A' : 'B';
+        localStorage.setItem(VARIANT_KEY, assigned);
+        return assigned;
+      }
+
+      function getStats() {
+        try {
+          const parsed = JSON.parse(localStorage.getItem(STATS_KEY));
+          return {
+            A: { views: Number(parsed?.A?.views) || 0, clicks: Number(parsed?.A?.clicks) || 0 },
+            B: { views: Number(parsed?.B?.views) || 0, clicks: Number(parsed?.B?.clicks) || 0 }
+          };
+        } catch (e) {
+          return { A: { views: 0, clicks: 0 }, B: { views: 0, clicks: 0 } };
+        }
+      }
+
+      function saveStats(stats) {
+        localStorage.setItem(STATS_KEY, JSON.stringify(stats));
+      }
+
+      function calcCtr(views, clicks) {
+        if (!views) return '0.00%';
+        return ((clicks / views) * 100).toFixed(2) + '%';
+      }
+
+      const activeVariant = getOrAssignVariant();
+      const stats = getStats();
+      stats[activeVariant].views += 1;
+      saveStats(stats);
+
+      function renderVariantContent(data) {
+        const v = (data && data.variants && data.variants[activeVariant]) || FALLBACK.variants[activeVariant];
+        document.getElementById('hero-headline').textContent = v.headline;
+        document.getElementById('hero-subtext').textContent = v.subtext;
+        document.getElementById('hero-cta-label').textContent = v.buttonLabel;
+        document.getElementById('hero-cta-btn').style.backgroundColor = v.buttonColor;
+        const badge = document.getElementById('header-variant-badge');
+        badge.textContent = 'Varian ' + activeVariant;
+      }
+
+      function renderDebugPanel() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('debug') !== '1') return;
+        const panel = document.getElementById('debug-panel');
+        panel.classList.remove('hidden');
+        const badge = document.getElementById('header-variant-badge');
+        badge.classList.remove('hidden');
+        badge.classList.add('inline-flex');
+        const current = getStats();
+        document.getElementById('debug-active-variant').textContent = activeVariant;
+        document.getElementById('debug-stats-a').textContent =
+          `Views: ${current.A.views} | Clicks: ${current.A.clicks} | CTR: ${calcCtr(current.A.views, current.A.clicks)}`;
+        document.getElementById('debug-stats-b').textContent =
+          `Views: ${current.B.views} | Clicks: ${current.B.clicks} | CTR: ${calcCtr(current.B.views, current.B.clicks)}`;
+      }
+
+      fetch('./content.json')
+        .then((res) => {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.json();
+        })
+        .then((json) => renderVariantContent(json))
+        .catch(() => renderVariantContent(FALLBACK));
+
+      // Only the main Hero CTA button counts as a "click" event for the A/B test.
+      // Other buttons on the page do not increment the click counter.
+      document.getElementById('hero-cta-btn').addEventListener('click', () => {
+        const current = getStats();
+        current[activeVariant].clicks += 1;
+        saveStats(current);
+        renderDebugPanel();
+        const fb = document.getElementById('click-feedback');
+        fb.textContent = 'Klik CTA Varian ' + activeVariant + ' tercatat!';
+        fb.classList.remove('hidden');
+      });
+
+      document.getElementById('btn-download-csv').addEventListener('click', () => {
+        const current = getStats();
+        const rows = [
+          ['variant', 'visitors', 'clicks', 'ctr'],
+          ['A', current.A.views, current.A.clicks, calcCtr(current.A.views, current.A.clicks)],
+          ['B', current.B.views, current.B.clicks, calcCtr(current.B.views, current.B.clicks)]
+        ];
+        const csv = rows.map((r) => r.join(',')).join('\n');
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'bank_contoh_kpr_ab_test.csv';
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+
+      document.getElementById('btn-reset-data').addEventListener('click', () => {
+        saveStats({ A: { views: 0, clicks: 0 }, B: { views: 0, clicks: 0 } });
+        renderDebugPanel();
+      });
+
+      renderDebugPanel();
+    })();
+  </script>
+</body>
+</html>
