@@ -1,0 +1,17 @@
+{
+  "experimentName": "Simulasi A/B Test Landing Page KPR Bank Contoh",
+  "durationDays": 14,
+  "alpha": 0.05,
+  "variants": {
+    "A": {
+      "name": "Variant A (Fokus Bunga 3,5%)",
+      "visitors": [36, 34, 38, 35, 37, 36, 33, 36, 37, 35, 36, 38, 34, 35],
+      "clicks": [3, 2, 4, 3, 3, 3, 2, 3, 4, 2, 3, 4, 2, 2]
+    },
+    "B": {
+      "name": "Variant B (Fokus Cicilan Rp3 Jutaan)",
+      "visitors": [35, 37, 36, 34, 36, 38, 35, 36, 34, 37, 36, 35, 36, 35],
+      "clicks": [4, 5, 5, 4, 5, 6, 4, 5, 4, 5, 5, 4, 5, 4]
+    }
+  }
+}
